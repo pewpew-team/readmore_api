@@ -19,4 +19,5 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^area51/', admin.site.urls),
+    url(r'^', include('books.urls')),
 ]
