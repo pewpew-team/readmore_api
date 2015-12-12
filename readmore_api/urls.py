@@ -21,4 +21,5 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
     url(r'^area51/', admin.site.urls),
     url(r'^', include('books.urls')),
+    url(r'^rest-auth/', include('rest_auth.urls')),
 ] + staticfiles_urlpatterns()

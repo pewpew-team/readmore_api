@@ -4,5 +4,6 @@ from books.views import BookListCreate
 
 urlpatterns = patterns(
     '',
-    url(r'^books/list/', BookListCreate.as_view(), name='book-list'),
+    url(r'^books/', BookListCreate.as_view(), name='book-list'),
 )
+
